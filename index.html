@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M Vasanth Kumar Goud | Fullstack Web Designer</title>
-<meta name="description" content="Portfolio of M Vasanth Kumar Goud — Fullstack Web Designer specializing in Frontend, UI/UX & Firebase. Based in India.">
+<meta name="description" content="Portfolio of M Vasanth Kumar Goud â€” Fullstack Web Designer specializing in Frontend, UI/UX & Firebase. Based in India.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-/* ═══════════════════════════════════════
-   ROOT — MIDNIGHT NAVY ROYAL THEME
-═══════════════════════════════════════ */
+
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   /* Backgrounds */
@@ -19,12 +17,12 @@
   --bg3:      #111d35;
   --card:     rgba(100,212,255,0.03);
   --card2:    rgba(100,212,255,0.06);
-  /* Primary — Electric Teal */
+  /* Primary â€” Electric Teal */
   --teal:     #4ecdc4;
   --teal-lt:  #7fded9;
   --teal-dk:  #1a8a85;
   --teal-glow:rgba(78,205,196,0.22);
-  /* Secondary — Champagne Gold */
+  /* Secondary â€” Champagne Gold */
   --gold:     #c9a84c;
   --gold-lt:  #e8d48a;
   --gold-dk:  #7a5a10;
@@ -42,9 +40,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);overfl
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--teal),var(--gold));border-radius:2px}
-/* ═══════════════════════════════════════
-   AURORA BACKGROUND — NAVY + TEAL ORBS
-═══════════════════════════════════════ */
+
 .aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .orb{position:absolute;border-radius:50%;filter:blur(110px)}
 .o1{width:700px;height:700px;top:-200px;right:-150px;
@@ -70,14 +66,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);overfl
 .grain{position:absolute;inset:0;opacity:.03;
     background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     background-size:200px 200px}
-/* ═══════════════════════════════════════
-   CURSOR
-═══════════════════════════════════════ */
+
 #cur{position:fixed;width:7px;height:7px;background:var(--teal);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;box-shadow:0 0 10px var(--teal)}
 #curl{position:fixed;width:30px;height:30px;border:1px solid rgba(78,205,196,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:border-color .3s}
-/* ═══════════════════════════════════════
-   NAVIGATION
-═══════════════════════════════════════ */
+
 nav{
   position:fixed;top:0;left:0;right:0;z-index:900;
   padding:1.8rem 4rem;
@@ -113,9 +105,7 @@ nav.scrolled{
 .nav-links a:hover{color:var(--teal)}.nav-links a:hover::after{width:100%}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;z-index:901}
 .burger span{display:block;width:22px;height:1.5px;background:var(--teal);transition:all .3s}
-/* ═══════════════════════════════════════
-   HERO
-═══════════════════════════════════════ */
+
 #hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
 #bg-canvas{position:absolute;inset:0;z-index:1}
 .hero-vignette{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 80% 80% at 50% 50%,transparent 0%,rgba(8,13,24,.65) 100%)}
@@ -198,7 +188,7 @@ nav.scrolled{
 .wheel{width:2.5px;height:5px;background:var(--teal);border-radius:2px;animation:scrollW 1.6s infinite}
 @keyframes scrollW{0%{transform:translateY(0);opacity:1}100%{transform:translateY(11px);opacity:0}}
 .scroll-hint p{font-size:.6rem;letter-spacing:4px;text-transform:uppercase;color:var(--txt3);font-family:'Space Grotesk',sans-serif}
-/* ── MARQUEE ── */
+/* â”€â”€ MARQUEE â”€â”€ */
 .marquee-wrap{
   position:relative;z-index:3;width:100%;overflow:hidden;
   border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);
@@ -210,9 +200,7 @@ nav.scrolled{
 .mq-item{display:flex;align-items:center;gap:.75rem;padding:0 2.5rem;font-size:.72rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--txt3);white-space:nowrap;font-family:'Space Grotesk',sans-serif}
 .mq-item i{color:var(--teal);font-size:.55rem}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-/* ═══════════════════════════════════════
-   SHARED SECTION
-═══════════════════════════════════════ */
+
 .sec{padding:8rem 4rem;max-width:1200px;margin:0 auto;position:relative;z-index:2}
 .sec-hd{text-align:center;margin-bottom:5.5rem}
 .sec-lbl{
@@ -234,9 +222,7 @@ nav.scrolled{
 .rv{opacity:0;transform:translateY(48px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
 .rv.on{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.07s}.d2{transition-delay:.16s}.d3{transition-delay:.25s}.d4{transition-delay:.34s}.d5{transition-delay:.43s}
-/* ═══════════════════════════════════════
-   WHAT I DO — SERVICE CARDS
-═══════════════════════════════════════ */
+
 #services{background:linear-gradient(180deg,transparent,rgba(78,205,196,.012) 50%,transparent)}
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
 .srv-card{
@@ -253,9 +239,7 @@ nav.scrolled{
 .srv-icon i{font-size:1.25rem;color:var(--teal)}
 .srv-card h3{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:700;color:var(--txt);margin-bottom:1rem;line-height:1.3}
 .srv-card p{font-size:.85rem;color:var(--txt2);line-height:1.85}
-/* ═══════════════════════════════════════
-   ABOUT
-═══════════════════════════════════════ */
+
 .about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:6rem;align-items:start}
 .big-q{
   font-family:'Playfair Display',serif;
@@ -279,7 +263,7 @@ nav.scrolled{
 .about-passion h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--txt);margin-bottom:1.4rem}
 .passion-list{list-style:none}
 .passion-list li{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;font-size:.87rem;color:var(--txt2);line-height:1.75}
-.passion-list li::before{content:'▸';color:var(--teal);font-size:.75rem;margin-top:.18rem;flex-shrink:0}
+.passion-list li::before{content:'â–¸';color:var(--teal);font-size:.75rem;margin-top:.18rem;flex-shrink:0}
 /* Stat Cards */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}
 .stat-c{background:var(--card);border:1px solid var(--bdr);padding:2rem;transition:all .35s;position:relative;overflow:hidden}
@@ -287,26 +271,29 @@ nav.scrolled{
 .stat-c:hover{border-color:var(--bdr2);background:var(--card2);box-shadow:0 8px 30px rgba(78,205,196,.08)}.stat-c:hover::before{transform:scaleX(1)}
 .stat-n{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:700;color:var(--teal);line-height:1;margin-bottom:.5rem}
 .stat-l{font-family:'Space Grotesk',sans-serif;font-size:.68rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--txt3);font-weight:500}
-/* ═══════════════════════════════════════
-   SKILLS
-═══════════════════════════════════════ */
+
 #skills{background:linear-gradient(180deg,transparent,rgba(78,205,196,.015) 50%,transparent)}
-.skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
-.sk-cat h3{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--txt);margin-bottom:2.2rem;display:flex;align-items:center;gap:1rem}
-.sk-cat h3 .dsh{display:inline-block;width:28px;height:1.5px;background:var(--teal)}
-.sk-row{margin-bottom:1.7rem}
-.sk-top{display:flex;margin-bottom:.55rem}
-.sk-nm{font-family:'Space Grotesk',sans-serif;font-size:.83rem;font-weight:500;color:var(--txt);letter-spacing:.8px}
-.sk-bar{height:3px;background:rgba(78,205,196,.08);border-radius:2px;overflow:visible}
-.sk-fill{height:100%;border-radius:2px;width:0;background:linear-gradient(90deg,var(--teal-dk),var(--teal),var(--teal-lt));transition:width 1.7s cubic-bezier(.16,1,.3,1);position:relative}
-.sk-fill::after{content:'';position:absolute;right:-1px;top:-3px;width:9px;height:9px;background:var(--teal-lt);border-radius:50%;box-shadow:0 0 14px var(--teal)}
-.sk-tags{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
-.sk-tag{padding:.45rem 1.1rem;border:1px solid var(--bdr);font-family:'Space Grotesk',sans-serif;font-size:.72rem;letter-spacing:1px;color:var(--txt2);transition:all .3s;cursor:default}
-.sk-tag:hover{border-color:var(--teal);color:var(--teal);background:rgba(78,205,196,.06)}
-.sk-sub{font-family:'Space Grotesk',sans-serif;font-size:.67rem;letter-spacing:3px;text-transform:uppercase;color:var(--txt3);margin:2rem 0 1rem}
-/* ═══════════════════════════════════════
-   PROJECTS — BROWSER MOCKUP
-═══════════════════════════════════════ */
+.skills-intro{font-size:.98rem;color:var(--txt2);max-width:560px;line-height:1.85;margin:0 auto 4rem;text-align:center;font-style:italic}
+.skills-zones{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-bottom:4rem}
+.skill-zone{background:var(--card);border:1px solid var(--bdr);padding:2.5rem 2rem;transition:all .4s;position:relative;overflow:hidden}
+.skill-zone::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),transparent);transform:scaleX(0);transition:transform .4s;transform-origin:left}
+.skill-zone:hover{border-color:var(--bdr2);transform:translateY(-5px);box-shadow:0 18px 45px rgba(78,205,196,.09)}.skill-zone:hover::after{transform:scaleX(1)}
+.zone-icon{width:46px;height:46px;background:rgba(78,205,196,.07);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;transition:all .4s}
+.skill-zone:hover .zone-icon{background:rgba(78,205,196,.15);border-color:var(--teal);box-shadow:0 0 18px rgba(78,205,196,.18)}
+.zone-icon i{font-size:1.1rem;color:var(--teal)}
+.zone-title{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--txt);margin-bottom:.45rem}
+.zone-desc{font-size:.78rem;color:var(--txt3);margin-bottom:1.6rem;font-style:italic;line-height:1.5}
+.zone-list{list-style:none}
+.zone-list li{font-size:.88rem;color:var(--txt2);padding:.55rem 0;border-bottom:1px solid rgba(78,205,196,.06);display:flex;align-items:center;gap:.8rem;transition:color .3s}
+.zone-list li:hover{color:var(--txt)}
+.zone-list li::before{content:'';display:inline-block;width:5px;height:5px;background:var(--teal);border-radius:50%;flex-shrink:0;box-shadow:0 0 6px var(--teal)}
+.zone-list li:last-child{border-bottom:none}
+.skills-also{text-align:center;padding-top:3rem;border-top:1px solid var(--bdr)}
+.also-label{display:block;font-family:'Space Grotesk',sans-serif;font-size:.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--txt3);margin-bottom:1.3rem}
+.also-pills{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+.also-pills span{padding:.45rem 1.1rem;border:1px solid var(--bdr);font-family:'Space Grotesk',sans-serif;font-size:.75rem;color:var(--txt2);transition:all .3s;cursor:default}
+.also-pills span:hover{border-color:var(--teal);color:var(--teal);background:rgba(78,205,196,.06)}
+
 .proj-intro{font-size:1rem;color:var(--txt2);line-height:1.9;max-width:620px;margin:0 auto 4rem;text-align:center}
 .proj-showcase{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
 /* Browser mockup */
@@ -342,9 +329,7 @@ nav.scrolled{
 .proj-link-main:hover{box-shadow:0 8px 28px rgba(78,205,196,.35);transform:translateY(-2px)}
 .proj-link-sub{display:inline-flex;align-items:center;gap:.6rem;color:var(--txt2);text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:.78rem;letter-spacing:1.5px;transition:color .3s}
 .proj-link-sub:hover{color:var(--teal)}
-/* ═══════════════════════════════════════
-   EDUCATION
-═══════════════════════════════════════ */
+
 .edu-tl{position:relative;padding-left:3.5rem}
 .edu-tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--teal),transparent)}
 .edu-item{position:relative;margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid var(--bdr)}
@@ -357,9 +342,7 @@ nav.scrolled{
 .edu-loc i{color:var(--teal);font-size:.75rem}
 .edu-badge{display:inline-block;padding:.35rem 1.1rem;border:1px solid rgba(78,205,196,.3);font-family:'Space Grotesk',sans-serif;font-size:.68rem;color:var(--teal);letter-spacing:2px;text-transform:uppercase}
 .edu-desc{margin-top:1.2rem;font-size:.88rem;color:var(--txt2);line-height:1.85;max-width:620px}
-/* ═══════════════════════════════════════
-   MANIFESTO
-═══════════════════════════════════════ */
+
 #manifesto{
   text-align:center;padding:9rem 4rem;
   background:linear-gradient(180deg,transparent,rgba(78,205,196,.02) 50%,transparent);
@@ -372,9 +355,7 @@ nav.scrolled{
 .manifesto-text em{-webkit-text-stroke:1px var(--teal);color:transparent;font-style:italic}
 .manifesto-sub{font-size:1rem;color:var(--txt2);line-height:1.9;max-width:600px;margin:0 auto 2rem}
 .manifesto-sig{font-family:'Playfair Display',serif;font-style:italic;color:var(--teal);font-size:1.1rem}
-/* ═══════════════════════════════════════
-   CONTACT
-═══════════════════════════════════════ */
+
 #contact{text-align:center;position:relative;z-index:2}
 .contact-q{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.1rem);font-style:italic;font-weight:400;color:var(--txt2);max-width:600px;margin:0 auto 3.5rem;line-height:1.65}
 .contact-btns{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:3rem}
@@ -388,30 +369,24 @@ nav.scrolled{
 .c-info-item{display:flex;align-items:center;gap:.65rem;font-size:.8rem;color:var(--txt2);font-family:'Space Grotesk',sans-serif}
 .c-info-item i{color:var(--teal);font-size:.85rem}
 .c-note{color:var(--txt3);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-family:'Space Grotesk',sans-serif}
-/* ═══════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════ */
+
 footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center}
 .f-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,var(--teal),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:3px}
 .f-txt{font-family:'Space Grotesk',sans-serif;font-size:.72rem;color:var(--txt3);letter-spacing:1.5px}
 .f-socials{display:flex;gap:1rem}
 .f-socials a{width:34px;height:34px;border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;color:var(--txt2);font-size:.8rem;text-decoration:none;transition:all .3s}
 .f-socials a:hover{border-color:var(--teal);color:var(--teal);background:rgba(78,205,196,.08);box-shadow:0 0 14px rgba(78,205,196,.15)}
-/* ═══════════════════════════════════════
-   KEYFRAMES
-═══════════════════════════════════════ */
+
 @keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-/* ═══════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════ */
+
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.proj-showcase{grid-template-columns:1fr;gap:3rem}.browser-body{height:320px}}
 @media(max-width:800px){
   nav{padding:1.2rem 1.5rem}nav.scrolled{padding:.9rem 1.5rem}
   .nav-links{display:none;position:fixed;inset:0;background:rgba(8,13,24,.97);flex-direction:column;justify-content:center;align-items:center;gap:3rem;font-size:1.1rem;z-index:800}
   .nav-links.open{display:flex}.burger{display:flex}
   .sec{padding:5rem 1.5rem}.about-grid{grid-template-columns:1fr;gap:3rem}
-  .skills-wrap{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}
+  .skills-zones{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}
   footer{flex-direction:column;gap:1.2rem;text-align:center;padding:2rem 1.5rem}
   .contact-btns{flex-direction:column;align-items:center}.c-btn{width:100%;max-width:340px}
   #manifesto{padding:6rem 1.5rem}.manifesto-inner::before{font-size:8rem}
@@ -420,7 +395,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
 </style>
 </head>
 <body>
-<!-- AURORA BACKGROUND -->
+
 <div class="aurora">
   <div class="orb o1"></div>
   <div class="orb o2"></div>
@@ -445,9 +420,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
   </ul>
   <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<!-- ════════════════════════════════════
-     HERO
-════════════════════════════════════ -->
+
 <section id="hero">
   <canvas id="bg-canvas"></canvas>
   <div class="hero-vignette"></div>
@@ -464,7 +437,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
       <span class="t" id="typed"></span><span class="cb">|</span>
     </p>
     <p class="hero-desc">
-      A digital craftsman turning bold ideas into powerful web experiences — where classic design meets cutting-edge technology.
+      A digital craftsman turning bold ideas into powerful web experiences â€” where classic design meets cutting-edge technology.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="cta-a"><i class="fas fa-eye"></i>View My Work</a>
@@ -504,9 +477,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
     <p>Scroll to explore</p>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     WHAT I DO
-════════════════════════════════════ -->
+
 <section class="sec" id="services">
   <div class="sec-hd rv">
     <span class="sec-lbl">My Expertise</span>
@@ -522,23 +493,21 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
     <div class="srv-card rv d1">
       <div class="srv-icon"><i class="fas fa-code"></i></div>
       <h3>Frontend Development</h3>
-      <p>Pixel-perfect, fully responsive interfaces built with clean HTML5, CSS3, and JavaScript. Fast load times, smooth animations, and flawless cross-device experiences — built to impress and perform.</p>
+      <p>Pixel-perfect, fully responsive interfaces built with clean HTML5, CSS3, and JavaScript. Fast load times, smooth animations, and flawless cross-device experiences â€” built to impress and perform.</p>
     </div>
     <div class="srv-card rv d2">
       <div class="srv-icon"><i class="fas fa-cloud"></i></div>
       <h3>Firebase &amp; Backend</h3>
-      <p>Scalable, secure cloud-powered backends using Firebase Authentication, Cloud Firestore, Storage, and Hosting. Full CRUD operations, real-time databases, and REST API integration — all handled seamlessly.</p>
+      <p>Scalable, secure cloud-powered backends using Firebase Authentication, Cloud Firestore, Storage, and Hosting. Full CRUD operations, real-time databases, and REST API integration â€” all handled seamlessly.</p>
     </div>
     <div class="srv-card rv d3">
       <div class="srv-icon"><i class="fas fa-layer-group"></i></div>
       <h3>UI / UX Design</h3>
-      <p>User-centered design that feels intuitive, beautiful, and purposeful. I apply UI/UX fundamentals to create interfaces that guide users naturally — reducing friction and increasing engagement.</p>
+      <p>User-centered design that feels intuitive, beautiful, and purposeful. I apply UI/UX fundamentals to create interfaces that guide users naturally â€” reducing friction and increasing engagement.</p>
     </div>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     ABOUT
-════════════════════════════════════ -->
+
 <section class="sec" id="about">
   <div class="sec-hd rv">
     <span class="sec-lbl">Who I Am</span>
@@ -548,15 +517,15 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
   <div class="about-grid">
     <div class="about-body rv">
       <p class="big-q">"A digital craftsman where every pixel tells a story and every line of code shapes an experience worth remembering."</p>
-      <p>I'm <strong>M Vasanth Kumar Goud</strong> — a passionate Fullstack Web Designer and final year B.Tech student in Artificial Intelligence &amp; Machine Learning at <strong>Sanskriti University, Mathura</strong>. My journey began with a simple question: why do some websites feel magical while others feel forgettable?</p>
-      <p>That question became my obsession. I spent countless hours mastering the craft — from pixel-perfect CSS animations to real-time Firebase backends — building everything from sleek business platforms to dynamic web applications. Today, I don't just build websites; I create <strong>digital experiences with intention</strong>.</p>
-      <p>Beyond the code, I believe great design is invisible — it simply works, feels right, and leaves an impression that lasts. Whether it's a business that needs a powerful online presence or a client with a vision waiting to come alive — I bring it to life with detail, creativity, and dedication.</p>
-      <p>Currently in my final year, I'm actively building real-world projects that merge my academic foundation in AI &amp; ML with my passion for design — pushing the boundaries of what the web can look and feel like.</p>
+      <p>I'm <strong>M Vasanth Kumar Goud</strong> â€” a passionate Fullstack Web Designer and final year B.Tech student in Artificial Intelligence &amp; Machine Learning at <strong>Sanskriti University, Mathura</strong>. My journey began with a simple question: why do some websites feel magical while others feel forgettable?</p>
+      <p>That question became my obsession. I spent countless hours mastering the craft â€” from pixel-perfect CSS animations to real-time Firebase backends â€” building everything from sleek business platforms to dynamic web applications. Today, I don't just build websites; I create <strong>digital experiences with intention</strong>.</p>
+      <p>Beyond the code, I believe great design is invisible â€” it simply works, feels right, and leaves an impression that lasts. Whether it's a business that needs a powerful online presence or a client with a vision waiting to come alive â€” I bring it to life with detail, creativity, and dedication.</p>
+      <p>Currently in my final year, I'm actively building real-world projects that merge my academic foundation in AI &amp; ML with my passion for design â€” pushing the boundaries of what the web can look and feel like.</p>
       <div class="about-passion">
         <h4>What Drives Me</h4>
         <ul class="passion-list">
-          <li>Creating websites that go beyond aesthetics — websites that convert, engage, and perform at every level.</li>
-          <li>Obsessing over the small details: the animation timing, the spacing, the typography — because that's what separates good from extraordinary.</li>
+          <li>Creating websites that go beyond aesthetics â€” websites that convert, engage, and perform at every level.</li>
+          <li>Obsessing over the small details: the animation timing, the spacing, the typography â€” because that's what separates good from extraordinary.</li>
           <li>Constantly learning and exploring new technologies, design trends, and creative approaches to stay ahead of the curve.</li>
           <li>Delivering work that not only meets expectations but genuinely surprises and delights every client.</li>
         </ul>
@@ -580,49 +549,64 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
     </div>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     SKILLS
-════════════════════════════════════ -->
+
 <section class="sec" id="skills">
   <div class="sec-hd rv">
     <span class="sec-lbl">What I Know</span>
     <h2 class="sec-title">My <span class="acc">Skills</span></h2>
     <div class="sec-divider"></div>
   </div>
-  <div class="skills-wrap">
-    <div class="sk-cat rv">
-      <h3><span class="dsh"></span>Frontend Development</h3>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">HTML5</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">CSS3 &amp; Advanced Styling</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">JavaScript (ES6+)</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">Responsive Web Design</span></div><div class="sk-bar"><div class="sk-fill" data-w="94"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">UI / UX Fundamentals</span></div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div></div>
-      <div class="sk-sub">Additional Frontend Expertise</div>
-      <div class="sk-tags">
-        <span class="sk-tag">Flexbox</span><span class="sk-tag">CSS Grid</span>
-        <span class="sk-tag">Animations</span><span class="sk-tag">Design Systems</span>
-        <span class="sk-tag">Git</span><span class="sk-tag">Accessibility</span>
-      </div>
+  <p class="skills-intro rv">I pick up technologies fast and learn by building real things â€” here's what I reach for when I sit down to work.</p>
+  <div class="skills-zones">
+    <div class="skill-zone rv">
+      <div class="zone-icon"><i class="fas fa-pencil-ruler"></i></div>
+      <h3 class="zone-title">Design &amp; Structure</h3>
+      <p class="zone-desc">What I use to build things that actually look great</p>
+      <ul class="zone-list">
+        <li>HTML5</li>
+        <li>CSS3 &amp; Advanced Styling</li>
+        <li>Responsive Web Design</li>
+        <li>UI / UX Fundamentals</li>
+      </ul>
     </div>
-    <div class="sk-cat rv d2">
-      <h3><span class="dsh"></span>Backend &amp; Cloud</h3>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">Python</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">Firebase Auth &amp; Storage</span></div><div class="sk-bar"><div class="sk-fill" data-w="89"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">Cloud Firestore / NoSQL</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">REST API Integration</span></div><div class="sk-bar"><div class="sk-fill" data-w="76"></div></div></div>
-      <div class="sk-row"><div class="sk-top"><span class="sk-nm">CRUD Operations</span></div><div class="sk-bar"><div class="sk-fill" data-w="91"></div></div></div>
-      <div class="sk-sub">Additional Backend Expertise</div>
-      <div class="sk-tags">
-        <span class="sk-tag">Firebase Hosting</span><span class="sk-tag">BaaS Architecture</span>
-        <span class="sk-tag">NoSQL Management</span><span class="sk-tag">API Design</span>
-        <span class="sk-tag">Cloud Storage</span><span class="sk-tag">Real-time DB</span>
-      </div>
+    <div class="skill-zone rv d1">
+      <div class="zone-icon"><i class="fas fa-terminal"></i></div>
+      <h3 class="zone-title">Logic &amp; Interaction</h3>
+      <p class="zone-desc">What makes things move, respond, and think</p>
+      <ul class="zone-list">
+        <li>JavaScript (ES6+)</li>
+        <li>Python</li>
+        <li>REST API Integration</li>
+        <li>CRUD Operations</li>
+      </ul>
+    </div>
+    <div class="skill-zone rv d2">
+      <div class="zone-icon"><i class="fas fa-server"></i></div>
+      <h3 class="zone-title">Cloud &amp; Backend</h3>
+      <p class="zone-desc">What I rely on to store, auth &amp; serve data</p>
+      <ul class="zone-list">
+        <li>Firebase Authentication</li>
+        <li>Cloud Firestore</li>
+        <li>Firebase Storage &amp; Hosting</li>
+        <li>NoSQL Database Management</li>
+      </ul>
+    </div>
+  </div>
+  <div class="skills-also rv">
+    <span class="also-label">Also comfortable with</span>
+    <div class="also-pills">
+      <span>Flexbox &amp; CSS Grid</span>
+      <span>CSS Animations</span>
+      <span>Git &amp; GitHub</span>
+      <span>GitHub Pages</span>
+      <span>Backend-as-a-Service</span>
+      <span>Design Systems</span>
+      <span>Web Accessibility</span>
+      <span>API Design</span>
     </div>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     PROJECTS
-════════════════════════════════════ -->
+
 <section class="sec" id="projects">
   <div class="sec-hd rv">
     <span class="sec-lbl">What I've Built</span>
@@ -659,7 +643,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
       <div class="proj-lbl">Featured &middot; Live Website &middot; 2024</div>
       <h3 class="proj-t">SLNS Enterprises Business Website</h3>
       <p class="proj-d">A complete, professional business website designed and developed end-to-end for SLNS Enterprises. The project demanded a strong brand presence with a polished visual identity, intuitive navigation, and a layout carefully engineered to build trust and convert visitors into customers.</p>
-      <p class="proj-d">Every section — from the hero to the footer — was crafted with purpose. The result is a fast, responsive, and visually compelling digital presence that represents the business with authority across all devices.</p>
+      <p class="proj-d">Every section â€” from the hero to the footer â€” was crafted with purpose. The result is a fast, responsive, and visually compelling digital presence that represents the business with authority across all devices.</p>
       <div class="proj-tech">
         <span class="t-tag">HTML5</span><span class="t-tag">CSS3</span>
         <span class="t-tag">JavaScript</span><span class="t-tag">Responsive Design</span>
@@ -676,9 +660,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
     </div>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     EDUCATION
-════════════════════════════════════ -->
+
 <section class="sec" id="education">
   <div class="sec-hd rv">
     <span class="sec-lbl">My Academic Journey</span>
@@ -687,33 +669,29 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
   </div>
   <div class="edu-tl">
     <div class="edu-item rv">
-      <div class="edu-yr">2022 — Present</div>
-      <h3 class="edu-deg">Bachelor of Technology — Artificial Intelligence &amp; Machine Learning</h3>
+      <div class="edu-yr">2022 â€” Present</div>
+      <h3 class="edu-deg">Bachelor of Technology â€” Artificial Intelligence &amp; Machine Learning</h3>
       <p class="edu-sch">Sanskriti University</p>
       <p class="edu-loc"><i class="fas fa-map-marker-alt"></i>Mathura, Uttar Pradesh, India</p>
       <span class="edu-badge">Final Year Student</span>
-      <p class="edu-desc">Pursuing a comprehensive B.Tech degree focused on Artificial Intelligence and Machine Learning. Alongside academics, I've channeled my passion into web design and development — building real-world projects, learning industry tools, and crafting digital experiences that bridge technology with creativity. My foundation in AI &amp; ML informs how I think about data, logic, and intelligent systems, which I integrate into modern web solutions.</p>
+      <p class="edu-desc">Pursuing a comprehensive B.Tech degree focused on Artificial Intelligence and Machine Learning. Alongside academics, I've channeled my passion into web design and development â€” building real-world projects, learning industry tools, and crafting digital experiences that bridge technology with creativity. My foundation in AI &amp; ML informs how I think about data, logic, and intelligent systems, which I integrate into modern web solutions.</p>
     </div>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     MANIFESTO
-════════════════════════════════════ -->
+
 <section id="manifesto">
   <div class="manifesto-inner">
     <span class="manifesto-lbl rv">My Philosophy</span>
     <h2 class="manifesto-text rv">
       Design is not just what it looks like.<br>
-      Design is how it <em>works</em> — and how it<br>
+      Design is how it <em>works</em> â€” and how it<br>
       makes people <em>feel</em>.
     </h2>
-    <p class="manifesto-sub rv">I don't build websites. I build digital landmarks — experiences that make people stop, engage, and remember. Every project starts with a story and ends with something that makes people say "wow."</p>
-    <span class="manifesto-sig rv">— M Vasanth Kumar Goud</span>
+    <p class="manifesto-sub rv">I don't build websites. I build digital landmarks â€” experiences that make people stop, engage, and remember. Every project starts with a story and ends with something that makes people say "wow."</p>
+    <span class="manifesto-sig rv">â€” M Vasanth Kumar Goud</span>
   </div>
 </section>
-<!-- ════════════════════════════════════
-     CONTACT
-════════════════════════════════════ -->
+
 <section class="sec" id="contact">
   <div class="sec-hd rv">
     <span class="sec-lbl">Let's Build Together</span>
@@ -724,7 +702,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
   <div class="c-info rv">
     <span class="c-info-item"><i class="fas fa-phone"></i>+91 83280 38729</span>
     <span class="c-info-item"><i class="fas fa-envelope"></i>molgaramvasanthgoud@gmail.com</span>
-    <span class="c-info-item"><i class="fas fa-map-marker-alt"></i>India — Available Remotely</span>
+    <span class="c-info-item"><i class="fas fa-map-marker-alt"></i>India â€” Available Remotely</span>
   </div>
   <div class="contact-btns">
     <a href="https://wa.me/918328038729" target="_blank" rel="noopener" class="c-btn c-wa rv d1"><i class="fab fa-whatsapp"></i>WhatsApp Me</a>
@@ -736,7 +714,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
 <!-- FOOTER -->
 <footer>
   <div class="f-logo">VKG</div>
-  <p class="f-txt">© 2024 M Vasanth Kumar Goud &nbsp;·&nbsp; Crafted with passion &amp; precision</p>
+  <p class="f-txt">Â© 2024 M Vasanth Kumar Goud &nbsp;Â·&nbsp; Crafted with passion &amp; precision</p>
   <div class="f-socials">
     <a href="https://wa.me/918328038729" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     <a href="mailto:molgaramvasanthgoud@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
@@ -744,9 +722,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--bdr);padding:2.5re
     <a href="https://vasanth629.github.io/SLNS-Enterprises/" target="_blank" rel="noopener" title="Live Project"><i class="fas fa-globe"></i></a>
   </div>
 </footer>
-<!-- ═══════════════════════════════════════
-     SCRIPTS
-═══════════════════════════════════════ -->
+
 <script>
 /* CURSOR */
 const cur=document.getElementById('cur'),curl=document.getElementById('curl');
@@ -757,7 +733,7 @@ document.querySelectorAll('a,button').forEach(el=>{
   el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2.2)';curl.style.transform='translate(-50%,-50%) scale(1.6)';curl.style.borderColor='rgba(78,205,196,.85)'});
   el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';curl.style.transform='translate(-50%,-50%) scale(1)';curl.style.borderColor='rgba(78,205,196,.4)'});
 });
-/* CANVAS PARTICLES — TEAL THEME */
+/* CANVAS PARTICLES â€” TEAL THEME */
 const cnv=document.getElementById('bg-canvas'),ctx=cnv.getContext('2d');
 function resize(){cnv.width=window.innerWidth;cnv.height=window.innerHeight}resize();
 window.addEventListener('resize',resize);
@@ -812,10 +788,6 @@ nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.
 const rvEls=document.querySelectorAll('.rv');
 const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
 rvEls.forEach(el=>ro.observe(el));
-/* SKILL BARS */
-const bars=document.querySelectorAll('.sk-fill');
-const bo=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target)}})},{threshold:.3});
-bars.forEach(b=>bo.observe(b));
 /* COUNTER */
 function animCount(el,target){let s=0,d=2000,step=d/target;const t=setInterval(()=>{s++;el.textContent=s;if(s>=target)clearInterval(t)},step)}
 const counters=document.querySelectorAll('[data-count]');
